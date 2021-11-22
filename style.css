@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* color */
+/* #5df19e */
+/* #87f8b8 */
+
+body{
+    background-color: skyblue;
+}
+
+.navbar{
+    background: transparent;
+    width: 100vw;
+    height: 8vh;
+    color: #fff;
+    position: fixed;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: .4rem;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.bungkus-nav{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    padding: .3em 0;
+    border-bottom: 1px solid #fff;
+}
+
+.main1{
+    background: #89CFF0;
+    height: 85vh;
+    width: 100%;
+    z-index: -999;
+
+}
+
+.brand{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.title{
+    line-height: 8vh;
+    font-size: 1.4em;
+}
+
+.ul-navbar{
+    display: flex;
+    line-height: 8vh;
+}
+
+.li-navbar{
+    list-style: none;
+}
+
+.ul-navbar .li-navbar .link-navbar{
+    text-decoration: none;
+    margin: 0 1.2rem;
+    font-size: 1rem;
+    color: #FFF;
+    transition: 0.5s;
+}
+
+.respon{
+    height: 2em;
+    width: 6%;
+    padding-top: 3px;
+    display: none;
+}
+
+.respon-garis{
+    display: block;
+    width: 100%;
+    background: #fff;
+    height: 0.23em;
+    margin: 6px 0;
+    transition: .3s;
+}
+
+.brand .respon .garis1.active{
+    transform: rotateZ(-135deg);
+    width: 50%;
+    margin-bottom: -3px;
+    margin-left: 2px;
+}
+.brand .respon .garis2.active{
+    transform: rotateZ(135deg);
+    width: 100%;
+}
+.brand .respon .garis3.active{
+    transform: rotateZ(-135deg);
+    width: 50%;
+    margin-top: -4px;
+    margin-left: 14px;
+}
+
+.navbar.active{
+    overflow:visible;
+    border-bottom: 25vh solid #fff;
+}
+
+.navbar.active .ul-navbar .li-navbar .link-navbar{
+    color: black;
+    margin: 0;
+}
+
+
+@media (max-width:1366px ) {
+    .title{
+        font-size: 1em;
+    }
+
+    .ul-navbar .li-navbar .link-navbar{
+        font-size: .8em;
+    }
+}
+
+@media( min-width:701px ){
+    .navbar.active{
+        overflow:visible;
+        border:none;
+    }
+    
+    .navbar.active .ul-navbar .li-navbar .link-navbar{
+        color: #fff;
+        margin: 0 1.2rem;
+    }
+
+    .navbar.active .bungkus-nav{
+        border-bottom: 1px solid #fff;
+    }
+}
+
+@media (max-width:700px) {
+    .navbar{
+        overflow: hidden;
+        border-bottom: 1px solid #fff;
+    }
+
+    .bungkus-nav{
+        display: block;
+        padding-top: 7px;
+        border: none;
+    }
+
+    .brand{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .links{
+        display: block;
+    }
+
+    .ul-navbar{
+        display: block;
+    }
+
+    .respon{
+        display: block;
+    }
+    
+}
+
+@media(max-width:500px){
+    .brand .respon .garis1.active{
+        margin-bottom: -5px;
+        margin-left: 2px;
+    }
+
+    .brand .respon .garis3.active{     
+        margin-top: -5px;
+        margin-left: 10px;
+
+    }
+}
+
+@media(max-width:360px){
+    .brand .respon .garis1.active{
+        margin-bottom: -5px;
+        margin-left: 2px;
+    }
+
+    .brand .respon .garis3.active{     
+        margin-top: -7px;
+        margin-left: 9px;
+    }
+}
+
+*{margin:0px auto;}
+html,body{
+    height:100%;
+}
+#container{
+    position:relative;
+    min-height:100%;
+    position:relative;
+}
+
+#content{
+    padding:100px;
+    padding-bottom:60px;
+}
+
+.contact{
+    float: left;
+    padding-left: 200px;
+}
+
+.sosmed{
+    float: right;
+    padding-right: 200px;
+}
+
+#footer{
+    height:50px;
+    line-height:50px;
+    background:#333;
+    color:#fff;
+    position:absolute;
+    bottom:0px;
+    width:100%;
+}
+
